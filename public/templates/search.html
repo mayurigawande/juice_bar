@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="col-md-8">
+        <input type="text" ng-model="juicename"><br><br>
+    <ul class="list-group" ng-repeat="j in juice |filter:juicename">
+        <li class="list-group-item">{{j.name}}</li>
+        <li class="list-group-item">{{j.content}}</li>
+        <li class="list-group-item">{{j.price}} </li>
+        <li class="list-group-item">
+            
+            <p class="button">
+                <button type="button" class="btn btn-success btn-xs">payment</button>
+                <button type="button" class="btn btn-success btn-xs">order</button>
+                <button type="button" class="btn btn-info btn-xs">Details</button>
+            <p>
+
+        </li>
+    </ul>
+    <div>
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+    </div>
+</div>

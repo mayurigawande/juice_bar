@@ -1,0 +1,94 @@
+<div class="container" style="background-image: url('images/banner-one.jpg'); height: 100%;">
+    <h1 style="text-align: center; color: blueviolet;"><b><i>Contact Us</b></i> </h1>
+
+    <div class="row col-md-6">
+
+
+        <div class="panel panel-default"> 
+            <div class=" panel panel-body">
+                <form class="form-horizontal" role="form" name="userFrm" ng-submit="signup(userFrm);" novalidate>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="name">Name:</label>
+                        <div class="col-sm-10">
+                            <input type="name" ng-model="user.name" name="name" class="form-control" id="name" placeholder="Enter name" required>
+                            <span class="error" ng-if="userFrm.name.$touched || userFrm.$submmited">
+                                <span ng-show="userFrm.name.$error.required">Name must be required.</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email"ng-model="user.email" name="email" class="form-control" id="email" placeholder="Enter email" required>
+                            <span class="error" ng-if="userFrm.email.$touched || userFrm.$submmited">
+                                <span ng-if="userFrm.email.$error.required">Email must be required.</span>
+                                <span ng-if="userFrm.email.$error.email">pleas enter email.</span>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pwd">Password:</label>
+                        <div class="col-sm-10">          
+                            <input type="password" ng-model="user.password" name="password" class="form-control" id="pwd" placeholder="Enter password" required>
+                            <span class="error" ng-if="userFrm.password.$touched || userFrm.$submmited">
+                                <span ng-if="userFrm.password.$error.required">Password must be required.</span>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pwd">Contact:</label>
+                        <div class="col-sm-10">          
+                            <input type="number" ng-model="user.contact" name="contact" class="form-control" id="pwd" placeholder="Enter number" required ng-minlength="5" ng-maxlength="10">
+                            <span class="error" ng-if="userFrm.contact.$touched || userFrm.$submmited">
+                                <span ng-if="userFrm.contact.$error.required">Contact Number must be required.</span>
+                                <span ng-if="userFrm.contact.$error.minlength">minimum 5 number required. </span>
+                                <span ng-if="userFrm.contact.$error.maxlength">maximum 10 number required. </span>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pwd">Comment:</label>
+                        <textarea rows='6' cols="50"></textarea>
+                        <div class="col-sm-10">          
+                        </div>
+                    </div>
+
+                    <div class="form-group">        
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="col-md-6 ">
+        <h4><span>
+                <P>            
+                    Address:<br>
+                    18-20 Richmond Rd Homebush West NSW 2140
+                <p> Support Office hours are:<br>
+                    Monday-Friday 9:00am-5:00pm </p>
+                <p>contact number:8975851110</p>
+                Email-id: juicebar@gmail.com
+
+
+                </p></span></h4>
+        <div style="margin-left: 20%;">
+            <img src="../images/staticmap.png" alt=""/>
+
+        </div>
+
+
+    </div>
+
+</div>

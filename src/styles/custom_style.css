@@ -1,0 +1,26 @@
+            .error{
+                color:red;
+            }
+            input.ng-invalid{
+                border-left: solid 6px red;
+            }
+            input.ng-valid{
+                border-left: solid 6px green;
+            }
+
+            .right-inner-addon {
+                position: relative;
+            }
+            .right-inner-addon input {
+                padding-right: 30px;    
+            }
+            .right-inner-addon i {
+                position: absolute;
+                right: 0px;
+                padding: 10px 12px;
+                pointer-events: none;
+            }
+            .navbar-brand {
+                margin-left: -15px;
+                padding-top: 0;
+            }
